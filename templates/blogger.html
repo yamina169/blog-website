@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+      <ul class="list-group"style="margin-top: 70px;">
+      {%for post in posts%}
+     
+      <li class="list-group-item "  style="margin-top: 15px;"> {{post.title}}</li>
+      <p>{{post.body}}</p>
+      <small class=" bg-secondary">{{post.author}}   {{post.date}}</small>
+      {%endfor%}
+    </ul>
+  </main>
+  {%endblock%}
